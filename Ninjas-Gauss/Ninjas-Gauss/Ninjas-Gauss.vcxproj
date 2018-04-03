@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4f8fc10e-a822-400f-8219-3484ed0a7d52}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>Ninjas_Gauss</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\driver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Array.h" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Array.hpp" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Basefunction.h" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Basefunction.hpp" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Chebyshev.h" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Chebyshev.hpp" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\DivDiffTable.h" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\DivDiffTable.hpp" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Interpolate.h" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Interpolate.hpp" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Poly.h" />
+    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Poly.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Doxyfile" />
+    <None Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\input_dataset3.txt" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
