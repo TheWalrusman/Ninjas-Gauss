@@ -26,6 +26,35 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="Array.hpp" />
+    <ClInclude Include="Basefunction.h" />
+    <ClInclude Include="Basefunction.hpp" />
+    <ClInclude Include="Chebyshev.h" />
+    <ClInclude Include="Chebyshev.hpp" />
+    <ClInclude Include="DivDiffTable.h" />
+    <ClInclude Include="DivDiffTable.hpp" />
+    <ClInclude Include="Interpolate.h" />
+    <ClInclude Include="Interpolate.hpp" />
+    <ClInclude Include="Poly.h" />
+    <ClInclude Include="Poly.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Doxyfile" />
+    <None Include="driver" />
+    <None Include="makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="driver.cpp" />
+    <ClCompile Include="Ndriver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="driver.o" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input_dataset3.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4f8fc10e-a822-400f-8219-3484ed0a7d52}</ProjectGuid>
     <Keyword>Linux</Keyword>
@@ -60,31 +89,6 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\driver.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Array.h" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Array.hpp" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Basefunction.h" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Basefunction.hpp" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Chebyshev.h" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Chebyshev.hpp" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\DivDiffTable.h" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\DivDiffTable.hpp" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Interpolate.h" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Interpolate.hpp" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Poly.h" />
-    <ClInclude Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Poly.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\Doxyfile" />
-    <None Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\makefile" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="\\minerfiles.mst.edu\dfs\Users\kdc6w3\chebtest\input_dataset3.txt" />
-  </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
