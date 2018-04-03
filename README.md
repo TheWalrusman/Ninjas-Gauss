@@ -1,0 +1,2 @@
+# Ninjas-Gauss
+Gaussina Elimination 
