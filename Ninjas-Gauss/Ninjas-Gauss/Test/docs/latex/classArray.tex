@@ -1,0 +1,378 @@
+\hypertarget{classArray}{}\section{Array$<$ T $>$ Class Template Reference}
+\label{classArray}\index{Array$<$ T $>$@{Array$<$ T $>$}}
+
+
+This is the \hyperlink{classArray}{Array} class. it is a basic array class that hold elements and is used in most of the other classes.  
+
+
+
+
+{\ttfamily \#include $<$Array.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArray_a3e6c713fc9ea25ca99e62a5f8892ac07}{Array} (const int n)
+\begin{DoxyCompactList}\small\item\em A constructor for the \hyperlink{classArray}{Array} class that sets the size with n. \end{DoxyCompactList}\item 
+\hyperlink{classArray_ae25f6d485704fca18289aa16e10b2fa8}{Array} ()
+\begin{DoxyCompactList}\small\item\em A default constructor for the \hyperlink{classArray}{Array} class. \end{DoxyCompactList}\item 
+\hyperlink{classArray_a91caaf68a528574f5843a01050e35cee}{Array} (const \hyperlink{classArray}{Array}$<$ T $>$ \&source)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \hyperlink{classArray}{Array} class. \end{DoxyCompactList}\item 
+\hyperlink{classArray_ad95dc94e9c7aaa6e6be2ee1804a335bd}{Array} (\hyperlink{classArray}{Array} \&\&t)
+\begin{DoxyCompactList}\small\item\em Move constructor for \hyperlink{classArray}{Array} class. \end{DoxyCompactList}\item 
+\hyperlink{classArray_aab89a85b1ddb86864096acdcc0db439e}{$\sim$\+Array} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classArray}{Array} class destructor. \end{DoxyCompactList}\item 
+T \& \hyperlink{classArray_afc1f545d7ae1da746439a31022e0cc9b}{operator\mbox{[}$\,$\mbox{]}} (const int i)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classArray}{Array} class operator \mbox{[}\mbox{]} non const version. \end{DoxyCompactList}\item 
+T \& \hyperlink{classArray_a33f90c9b670e93143f8ce3f1feace3f6}{operator\mbox{[}$\,$\mbox{]}} (const int i) const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{classArray}{Array} class operator \mbox{[}\mbox{]} const version. \end{DoxyCompactList}\item 
+int \hyperlink{classArray_a71041b261f55a69da4abe90437e3d663}{numof\+Elts} () const 
+\begin{DoxyCompactList}\small\item\em The numof\+Elts function. \end{DoxyCompactList}\item 
+\hyperlink{classArray}{Array}$<$ T $>$ \& \hyperlink{classArray_a55b672825edb2cb26d7e01de911c6635}{operator=} (const \hyperlink{classArray}{Array}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator = for copy assignment. \end{DoxyCompactList}\item 
+\hyperlink{classArray}{Array}$<$ T $>$ \& \hyperlink{classArray_a1738dca17fb8ad6fb877201d76162063}{operator=} (\hyperlink{classArray}{Array}$<$ T $>$ \&\&t)
+\begin{DoxyCompactList}\small\item\em Operator = Move operator. \end{DoxyCompactList}\item 
+\hyperlink{classArray}{Array}$<$ T $>$ \& \hyperlink{classArray_abcfe8458bea5f78752ae329887db322c}{operator=} (const T rhs)
+\begin{DoxyCompactList}\small\item\em Operator = for scalar assignment. \end{DoxyCompactList}\item 
+void \hyperlink{classArray_a2ead650973657d9946f8d1ed645a48dd}{set\+Size} (const int n)
+\begin{DoxyCompactList}\small\item\em set\+Size Function. \end{DoxyCompactList}\item 
+\hyperlink{classArray}{Array}$<$ T $>$ \hyperlink{classArray_ae4a8aa69ef5f08592c1fc90dba4cb4db}{operator$\ast$} (const double scalar)
+\begin{DoxyCompactList}\small\item\em will multiply the array by the scalar. \end{DoxyCompactList}\item 
+\hyperlink{classArray}{Array}$<$ T $>$ \hyperlink{classArray_a084d137b172c4e0e1e71b3ca75984945}{operator+} (const \hyperlink{classArray}{Array}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em will add two arrays. \end{DoxyCompactList}\item 
+\hyperlink{classArray}{Array}$<$ T $>$ \hyperlink{classArray_a78268aed7c7c15605d42847ce378aa60}{operator-\/} (const \hyperlink{classArray}{Array}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em will subtract a array from another \hyperlink{classArray}{Array}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class U $>$ }\\std\+::ostream \& \hyperlink{classArray_abcf15181b9dccdf2d434f6d05c04896c}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{classArray}{Array}$<$ U $>$ \&source)
+\begin{DoxyCompactList}\small\item\em prints all elements of array seperated by space. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class U $>$ }\\std\+::istream \& \hyperlink{classArray_a68f2152ebc0554837f93354b9e064288}{operator$>$$>$} (std\+::istream \&in, const \hyperlink{classArray}{Array}$<$ U $>$ \&obj)
+\begin{DoxyCompactList}\small\item\em will read in as many elements needed to fill up given \hyperlink{classArray}{Array} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\\*
+class Array$<$ T $>$}
+
+This is the \hyperlink{classArray}{Array} class. it is a basic array class that hold elements and is used in most of the other classes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Array@{Array}!Array@{Array}}
+\index{Array@{Array}!Array@{Array}}
+\subsubsection[{\texorpdfstring{Array(const int n)}{Array(const int n)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{const int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a3e6c713fc9ea25ca99e62a5f8892ac07}{}\label{classArray_a3e6c713fc9ea25ca99e62a5f8892ac07}
+
+
+A constructor for the \hyperlink{classArray}{Array} class that sets the size with n. 
+
+\begin{DoxyPrecond}{Precondition}
+needs to be nonnegative. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+create a \hyperlink{classArray}{Array} class of size n 
+\end{DoxyPostcond}
+\index{Array@{Array}!Array@{Array}}
+\index{Array@{Array}!Array@{Array}}
+\subsubsection[{\texorpdfstring{Array()}{Array()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_ae25f6d485704fca18289aa16e10b2fa8}{}\label{classArray_ae25f6d485704fca18289aa16e10b2fa8}
+
+
+A default constructor for the \hyperlink{classArray}{Array} class. 
+
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will create a \hyperlink{classArray}{Array} of size 0. 
+\end{DoxyPostcond}
+\index{Array@{Array}!Array@{Array}}
+\index{Array@{Array}!Array@{Array}}
+\subsubsection[{\texorpdfstring{Array(const Array$<$ T $>$ \&source)}{Array(const Array< T > &source)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ T $>$ \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a91caaf68a528574f5843a01050e35cee}{}\label{classArray_a91caaf68a528574f5843a01050e35cee}
+
+
+Copy constructor for \hyperlink{classArray}{Array} class. 
+
+\begin{DoxyPrecond}{Precondition}
+two Arrays of same type. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Two Arrays now contain the same infomation. 
+\end{DoxyPostcond}
+\index{Array@{Array}!Array@{Array}}
+\index{Array@{Array}!Array@{Array}}
+\subsubsection[{\texorpdfstring{Array(\+Array \&\&t)}{Array(Array &&t)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ T $>$ \&\&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_ad95dc94e9c7aaa6e6be2ee1804a335bd}{}\label{classArray_ad95dc94e9c7aaa6e6be2ee1804a335bd}
+
+
+Move constructor for \hyperlink{classArray}{Array} class. 
+
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Will deallocate the Source \hyperlink{classArray}{Array} and transfer it to the Destination \hyperlink{classArray}{Array}. 
+\end{DoxyPostcond}
+\index{Array@{Array}!````~Array@{$\sim$\+Array}}
+\index{````~Array@{$\sim$\+Array}!Array@{Array}}
+\subsubsection[{\texorpdfstring{$\sim$\+Array()}{~Array()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$\+::$\sim${\bf Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_aab89a85b1ddb86864096acdcc0db439e}{}\label{classArray_aab89a85b1ddb86864096acdcc0db439e}
+
+
+\hyperlink{classArray}{Array} class destructor. 
+
+\begin{DoxyPrecond}{Precondition}
+A \hyperlink{classArray}{Array} class object. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Will deallocate memory taken by ptr\+\_\+to\+\_\+data array. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\index{Array@{Array}!numof\+Elts@{numof\+Elts}}
+\index{numof\+Elts@{numof\+Elts}!Array@{Array}}
+\subsubsection[{\texorpdfstring{numof\+Elts() const }{numofElts() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf Array}$<$ T $>$\+::numof\+Elts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a71041b261f55a69da4abe90437e3d663}{}\label{classArray_a71041b261f55a69da4abe90437e3d663}
+
+
+The numof\+Elts function. 
+
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Will return the int that represents the size of the \hyperlink{classArray}{Array}. 
+\end{DoxyPostcond}
+\index{Array@{Array}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const double scalar)}{operator*(const double scalar)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$ {\bf Array}$<$ T $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const double}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_ae4a8aa69ef5f08592c1fc90dba4cb4db}{}\label{classArray_ae4a8aa69ef5f08592c1fc90dba4cb4db}
+
+
+will multiply the array by the scalar. 
+
+\begin{DoxyPrecond}{Precondition}
+needs a filled array. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will return a \hyperlink{classArray}{Array}. 
+\end{DoxyPostcond}
+\index{Array@{Array}!operator+@{operator+}}
+\index{operator+@{operator+}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator+(const Array$<$ T $>$ \&rhs)}{operator+(const Array< T > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$ {\bf Array}$<$ T $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a084d137b172c4e0e1e71b3ca75984945}{}\label{classArray_a084d137b172c4e0e1e71b3ca75984945}
+
+
+will add two arrays. 
+
+\begin{DoxyPrecond}{Precondition}
+needs two arrays of same size.. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will return a \hyperlink{classArray}{Array}. 
+\end{DoxyPostcond}
+\index{Array@{Array}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator-\/(const Array$<$ T $>$ \&rhs)}{operator-(const Array< T > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$ {\bf Array}$<$ T $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a78268aed7c7c15605d42847ce378aa60}{}\label{classArray_a78268aed7c7c15605d42847ce378aa60}
+
+
+will subtract a array from another \hyperlink{classArray}{Array}. 
+
+\begin{DoxyPrecond}{Precondition}
+needs two arrays of the same size. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will return a \hyperlink{classArray}{Array}. 
+\end{DoxyPostcond}
+\index{Array@{Array}!operator=@{operator=}}
+\index{operator=@{operator=}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator=(const Array$<$ T $>$ \&rhs)}{operator=(const Array< T > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$ \& {\bf Array}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a55b672825edb2cb26d7e01de911c6635}{}\label{classArray_a55b672825edb2cb26d7e01de911c6635}
+
+
+Operator = for copy assignment. 
+
+\begin{DoxyPrecond}{Precondition}
+needs two Arrays of same type. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Will copy all data from rhs to the lhs. 
+\end{DoxyPostcond}
+\index{Array@{Array}!operator=@{operator=}}
+\index{operator=@{operator=}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator=(\+Array$<$ T $>$ \&\&t)}{operator=(Array< T > &&t)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$ \& {\bf Array}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ T $>$ \&\&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a1738dca17fb8ad6fb877201d76162063}{}\label{classArray_a1738dca17fb8ad6fb877201d76162063}
+
+
+Operator = Move operator. 
+
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Will have copied the non pointer data while cutting the pointer from rhs to lhs. 
+\end{DoxyPostcond}
+\index{Array@{Array}!operator=@{operator=}}
+\index{operator=@{operator=}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator=(const T rhs)}{operator=(const T rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Array}$<$ T $>$ \& {\bf Array}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const T}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_abcfe8458bea5f78752ae329887db322c}{}\label{classArray_abcfe8458bea5f78752ae329887db322c}
+
+
+Operator = for scalar assignment. 
+
+\begin{DoxyPrecond}{Precondition}
+t needs to be of same type T. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will assign all array space with value t. 
+\end{DoxyPostcond}
+\index{Array@{Array}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator[](const int i)}{operator[](const int i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T \& {\bf Array}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_afc1f545d7ae1da746439a31022e0cc9b}{}\label{classArray_afc1f545d7ae1da746439a31022e0cc9b}
+
+
+\hyperlink{classArray}{Array} class operator \mbox{[}\mbox{]} non const version. 
+
+\begin{DoxyPrecond}{Precondition}
+A \hyperlink{classArray}{Array} class object and nonnegative int i, needs to be with in the array\textquotesingle{}s dimensions. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will return the value stored at position i.
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if the value specified is less than 0 or greater than the Arrays num\+\_\+elts. \\
+\hline
+\end{DoxyExceptions}
+\index{Array@{Array}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator[](const int i) const }{operator[](const int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T \& {\bf Array}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a33f90c9b670e93143f8ce3f1feace3f6}{}\label{classArray_a33f90c9b670e93143f8ce3f1feace3f6}
+
+
+\hyperlink{classArray}{Array} class operator \mbox{[}\mbox{]} const version. 
+
+\begin{DoxyPrecond}{Precondition}
+A \hyperlink{classArray}{Array} class object and nonnegative int i, needs to be with in the array\textquotesingle{}s dimensions. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will return the value stored at position i.
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if the value specified is less than 0 or greater than the Arrays num\+\_\+elts. \\
+\hline
+\end{DoxyExceptions}
+\index{Array@{Array}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Array@{Array}}
+\subsubsection[{\texorpdfstring{set\+Size(const int n)}{setSize(const int n)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Array}$<$ T $>$\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{const int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArray_a2ead650973657d9946f8d1ed645a48dd}{}\label{classArray_a2ead650973657d9946f8d1ed645a48dd}
+
+
+set\+Size Function. 
+
+\begin{DoxyPrecond}{Precondition}
+n needs to be nonnegative and not over the max size of a int. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will have deallocated the ptr\+\_\+to\+\_\+data and re-\/initilized the \hyperlink{classArray}{Array} to size n.
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if the value specified is less than 0. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Array@{Array}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class U $>$ std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const {\bf Array}$<$ U $>$ \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classArray_abcf15181b9dccdf2d434f6d05c04896c}{}\label{classArray_abcf15181b9dccdf2d434f6d05c04896c}
+
+
+prints all elements of array seperated by space. 
+
+\begin{DoxyPrecond}{Precondition}
+a stream object and a \hyperlink{classArray}{Array} object. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will have return the stream object. 
+\end{DoxyPostcond}
+\index{Array@{Array}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Array@{Array}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class U $>$ std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{in, }
+\item[{const {\bf Array}$<$ U $>$ \&}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classArray_a68f2152ebc0554837f93354b9e064288}{}\label{classArray_a68f2152ebc0554837f93354b9e064288}
+
+
+will read in as many elements needed to fill up given \hyperlink{classArray}{Array} object. 
+
+\begin{DoxyPrecond}{Precondition}
+needs a in stream object and a \hyperlink{classArray}{Array} object. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will return a stream object. 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Array.\+h\item 
+Array.\+hpp\end{DoxyCompactItemize}

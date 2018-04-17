@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
 	A2.setSize(2);
 	A2 = 5;
 	test = test * A2;
-	//test.examine();
+	test.examine();
 	Matrix<double> test2(5, 5);
 	test = test3 * test2;
 	cout << endl << "#A*TRANSPOSE(A)" << endl;

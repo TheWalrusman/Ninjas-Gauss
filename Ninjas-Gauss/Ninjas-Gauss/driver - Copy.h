@@ -22,18 +22,18 @@
 using namespace std;
 int main(int argc, char *argv[])
 {
-
+	
 	int numofpoints;
 	try
 	{
-		if (argc != 3)
+		if(argc != 3)
 			throw invalid_argument("Argument List invalid");
 	}
-	catch (const invalid_argument& err)
+	catch(const invalid_argument& err)
 	{
-		cerr << endl << "ERROR: This program requires two argument, which must " <<
+		cerr<<endl<<"ERROR: This program requires two argument, which must " <<
 			"a integer first and then a readable file" << endl;
-
+		
 		return 1;
 	}
 	try
@@ -66,8 +66,8 @@ int main(int argc, char *argv[])
 	}
 	catch (const invalid_argument& err)
 	{
-		cerr << endl << "ERROR: Input file cannot be opened, " <<
-			"Please have a readable txt file as first command line argument" << endl;
+		cerr << endl << "ERROR: Input file cannot be opened, "<<
+		"Please have a readable txt file as first command line argument"<<endl;
 		inputfile.close();
 		return 1;
 	}
@@ -77,13 +77,13 @@ int main(int argc, char *argv[])
 	DiffTable<double> Dtable;
 	vector<Array<double>> results;
 	vector<Array<double> > vtest(2);
-
+	
 	try
 	{
 		if (!isnormal(numofpoints) || (numofpoints <= 0))
 			throw invalid_argument("First value is Invalid");
 	}
-	catch (const invalid_argument& err)
+	catch( const invalid_argument& err)
 	{
 		cerr << endl << "ERROR: The first number in the file should be a " <<
 			"integer and non negative";
@@ -106,10 +106,10 @@ int main(int argc, char *argv[])
 		inputfile.seekg(0);
 		while (inputfile >> truncatetest)
 		{
-			check++;
+			check++ ;
 		}
-		if (check != (numofpoints * 2 + 1))
-			throw invalid_argument("ERROR:More/less data to read after value specified");
+		if (check != (numofpoints*2 +1))
+		throw invalid_argument("ERROR:More/less data to read after value specified");
 	}
 	catch (const invalid_argument& err)
 	{
@@ -120,10 +120,10 @@ int main(int argc, char *argv[])
 	inputfile.close();
 	results = Dtable(vtest);
 
-
+	
 	Interpolate<double> interp;
 	interp.SetDiffTable(results);
-	vector<double> estimatedvalues = interp(0.1, 0.9, .2);
+	vector<double> estimatedvalues = interp(0.1,0.9,.2);
 
 	vector<double> truevalues;
 	for (double i = 0.1; i <= 0.9; i += 0.2)
@@ -152,21 +152,21 @@ int main(int argc, char *argv[])
 	Chvaluesy = mfunction(Chvaluesx);
 	cout << endl << "#CHEBYSHEV POINTS:" << endl;
 	for (int i = 0; i < Chvaluesx.numofElts(); i++)
-		cout << setprecision(13) << Chvaluesx[i] << "  ,  " << Chvaluesy[i] << endl;
+		cout << setprecision(13) << Chvaluesx[i]<<"  ,  "<<Chvaluesy[i] << endl;
 
 	vector<Array<double> > chebresults(2);
 	vector<Array<double> > chebdivtable;
 	chebresults[0] = Chvaluesx;
 	chebresults[1] = Chvaluesy;
 	DiffTable<double> Chevtable;
-	chebdivtable = Chevtable(chebresults);
+	chebdivtable =  Chevtable(chebresults);
 	vector<double> coefficentscheb;
 	vector<double> interpolantcheb;
 	vector<double> truecheb;
 	Interpolate<double> chebinterp;
 	chebinterp.SetDiffTable(chebdivtable);
 	cout << endl << "#CHEBYSHEV_COEFFICENTS:" << endl;
-	coefficentscheb = chebinterp(chebdivtable);
+	coefficentscheb= chebinterp(chebdivtable);
 	for (int i = 0; i <= nodestomake; i++)
 	{
 		cout << setprecision(13) << coefficentscheb[i] << endl;
@@ -208,9 +208,9 @@ int main(int argc, char *argv[])
 	}
 	for (int i = 0; i < 5; i++)
 	{
-		cout << setprecision(13) << abs(relvaluescheb[i] / estimatedvalues[i]) * 100 << endl;
+		cout << setprecision(13) << abs(relvaluescheb[i]/ estimatedvalues[i]) * 100 << endl;
 
 	}
 
-	return 0;
+    return 0;
 }

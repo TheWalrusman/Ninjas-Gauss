@@ -1,0 +1,2 @@
+driver.o: driver.cpp Array.h Array.hpp Matrix.h Matrix.hpp GaussSolve.h \
+ GaussSolve.hpp

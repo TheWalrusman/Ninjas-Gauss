@@ -1,0 +1,49 @@
+\hypertarget{classGaussSolve}{}\section{Gauss\+Solve$<$ T $>$ Class Template Reference}
+\label{classGaussSolve}\index{Gauss\+Solve$<$ T $>$@{Gauss\+Solve$<$ T $>$}}
+
+
+This is Gaussian solver using partial pivits. it takes a martrix of any size and will try to solve it using partial pivoting.  
+
+
+
+
+{\ttfamily \#include $<$Gauss\+Solve.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix}{Matrix}$<$ T $>$ \hyperlink{classGaussSolve_a5696a6833bbbf2ca02cea933b26ef090}{operator()} (\hyperlink{classMatrix}{Matrix}$<$ T $>$ \&base, const bool swapornot)
+\begin{DoxyCompactList}\small\item\em A functor for the \hyperlink{classGaussSolve}{Gauss\+Solve} that will apply the partial piviting to a linear system of equations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\\*
+class Gauss\+Solve$<$ T $>$}
+
+This is Gaussian solver using partial pivits. it takes a martrix of any size and will try to solve it using partial pivoting. 
+
+\subsection{Member Function Documentation}
+\index{Gauss\+Solve@{Gauss\+Solve}!operator()@{operator()}}
+\index{operator()@{operator()}!Gauss\+Solve@{Gauss\+Solve}}
+\subsubsection[{\texorpdfstring{operator()(\+Matrix$<$ T $>$ \&base, const bool swapornot)}{operator()(Matrix< T > &base, const bool swapornot)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Matrix}$<$ T $>$ {\bf Gauss\+Solve}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{base, }
+\item[{const bool}]{swapornot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGaussSolve_a5696a6833bbbf2ca02cea933b26ef090}{}\label{classGaussSolve_a5696a6833bbbf2ca02cea933b26ef090}
+
+
+A functor for the \hyperlink{classGaussSolve}{Gauss\+Solve} that will apply the partial piviting to a linear system of equations. 
+
+\begin{DoxyPrecond}{Precondition}
+A matrix that is able to be solved. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will return a full reduced matrix. 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Gauss\+Solve.\+h\item 
+Gauss\+Solve.\+hpp\end{DoxyCompactItemize}

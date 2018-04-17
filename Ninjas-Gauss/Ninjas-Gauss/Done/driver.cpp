@@ -21,8 +21,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 
-	cout << argc;
-	cout << argv[0];
+	
 
 
 	int numofpoints;
@@ -89,7 +88,7 @@ int main(int argc, char *argv[])
 
 	Matrix<double> baseA((int)numofpoints,(int)numofpoints);
 	Matrix<double> linsys((int)numofpoints + 1, (int)numofpoints);
-	Matrix<double> Test323(100, 100);
+
 	inputfile.clear();
 	inputfile.seekg(0);
 	double inputtmp = 0;
@@ -104,19 +103,6 @@ int main(int argc, char *argv[])
 
 	inputfile >> linsys;
 
-
-
-	Matrix<double> test(2, 2);
-	test = 3;
-	Matrix<double> test3(5, 5);
-	Array<double> A2(2);
-	A2 = 5;
-	A2.setSize(2);
-	A2 = 5;
-	test = test * A2;
-	//test.examine();
-	Matrix<double> test2(5, 5);
-	test = test3 * test2;
 	cout << endl << "#A*TRANSPOSE(A)" << endl;
 
 	Matrix<double> TranResult;

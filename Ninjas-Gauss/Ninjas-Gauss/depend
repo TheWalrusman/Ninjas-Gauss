@@ -1,3 +1,0 @@
-driver.o: driver.cpp Array.h Array.hpp DivDiffTable.h DivDiffTable.hpp \
- Poly.h Poly.hpp Interpolate.h Interpolate.hpp Chebyshev.h Chebyshev.hpp \
- Basefunction.h Basefunction.hpp

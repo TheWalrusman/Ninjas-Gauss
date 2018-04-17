@@ -35,8 +35,12 @@
     <ClInclude Include="Chebyshev.hpp" />
     <ClInclude Include="DivDiffTable.h" />
     <ClInclude Include="DivDiffTable.hpp" />
+    <ClInclude Include="GaussSolve.h" />
+    <ClInclude Include="GaussSolve.hpp" />
     <ClInclude Include="Interpolate.h" />
     <ClInclude Include="Interpolate.hpp" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="Matrix.hpp" />
     <ClInclude Include="Poly.h" />
     <ClInclude Include="Poly.hpp" />
   </ItemGroup>
@@ -47,7 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="driver.cpp" />
-    <ClCompile Include="Ndriver.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Object Include="driver.o" />
@@ -89,7 +92,14 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
-  <ItemDefinitionGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemoteCppCompileToolExe>g++-7</RemoteCppCompileToolExe>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>

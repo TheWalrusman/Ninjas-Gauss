@@ -34,7 +34,6 @@ inline Array<T>::Array(Array && t)
 	num_elts = t.num_elts;
 	ptr_to_data = t.ptr_to_data;
 	t.ptr_to_data = nullptr;
-
 }
 
 template<class T>
@@ -53,7 +52,7 @@ template<class T>
 inline Array<T>::~Array()
 {
 	delete[] ptr_to_data;
-	//ptr_to_data = nullptr;
+	ptr_to_data = nullptr;
 }
 
 template<class T>
@@ -82,6 +81,7 @@ inline int Array<T>::numofElts()const
 template<class T>
 inline Array<T>& Array<T>::operator=(const Array<T>& rhs)
 {
+	setSize(rhs.num_elts);
 	copy(rhs);
 	return *this;
 }
@@ -89,7 +89,6 @@ inline Array<T>& Array<T>::operator=(const Array<T>& rhs)
 template<class T>
 inline Array<T>& Array<T>::operator=(Array<T>&& t)
 {
-	delete[] ptr_to_data;
 	num_elts = t.num_elts;
 	ptr_to_data = t.ptr_to_data;
 	t.ptr_to_data = nullptr;
