@@ -100,4 +100,5 @@ inline Matrix<T> GaussSolve<T>::operator()(Matrix<T>& base,const bool swapornot)
 
 
 
+
 #endif // !GaussSolve

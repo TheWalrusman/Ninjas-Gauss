@@ -31,8 +31,11 @@
     <ClInclude Include="Array.hpp" />
     <ClInclude Include="Basefunction.h" />
     <ClInclude Include="Basefunction.hpp" />
+    <ClInclude Include="BaseMatrix.h" />
     <ClInclude Include="Chebyshev.h" />
     <ClInclude Include="Chebyshev.hpp" />
+    <ClInclude Include="DiagMatrix.h" />
+    <ClInclude Include="DiagMatrix.hpp" />
     <ClInclude Include="DivDiffTable.h" />
     <ClInclude Include="DivDiffTable.hpp" />
     <ClInclude Include="GaussSolve.h" />
@@ -43,6 +46,8 @@
     <ClInclude Include="Matrix.hpp" />
     <ClInclude Include="Poly.h" />
     <ClInclude Include="Poly.hpp" />
+    <ClInclude Include="SymMatric.h" />
+    <ClInclude Include="SymMatrix.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Doxyfile" />

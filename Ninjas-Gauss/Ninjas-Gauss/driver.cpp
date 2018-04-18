@@ -15,14 +15,17 @@
 #include <cmath>
 #include "Array.h"
 #include "Matrix.h"
+#include "BaseMatrix.h"
+#include "DiagMatrix.h"
+#include "SymMatric.h"
 #include "GaussSolve.h"
 
 using namespace std;
 int main(int argc, char *argv[])
 {
 
-	cout << argc;
-	cout << argv[0];
+	//cout << argc;
+	//cout << argv[0];
 
 
 	int numofpoints;
@@ -137,5 +140,27 @@ int main(int argc, char *argv[])
 	cout << endl << "#A*X" << endl;
 	cout << linsys[numofpoints];
 	inputfile.close();
+	cout << "";
+
+
+	DiagMatrix<double> aaa(10, 10);
+	cout << aaa<<endl;
+	aaa = 10;
+	cout << aaa << endl;
+
+	SymMatrix<double> bbb(3,3);
+	bbb = 0;
+	cout << bbb << endl;
+	bbb = 10;
+	bbb(0, 2) = 11;
+	cout << bbb << endl;
+
+
+
+
+
+
+
+
 	return 0;
 }
